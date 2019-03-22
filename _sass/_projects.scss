@@ -91,4 +91,6 @@ $first-column: $img-width + $img-padding-left;
     max-height: $project-block-height - $project-title-height;
 
     text-align: left;
+
+    color: $color-main;
 }
