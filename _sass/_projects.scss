@@ -9,21 +9,16 @@ $img-height: $project-block-height - 2* $img-padding-top;
 $img-width: $img-height * 16 / 9    ;
 
 $first-column: $img-width + $img-padding-left;
-
+// -----------------------------------------
 .project-block
 {
     display: block;
-
     border-radius: 1em;
-    //background-color: $accent;
+    position: relative;
+    margin: 0.8em 0em;
     
     width: 100%;
     max-width: 50rem;
-    height: $project-block-height;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-
-    position: relative;
 
     background-color: $bg-sidebar;
 }
@@ -33,30 +28,72 @@ $first-column: $img-width + $img-padding-left;
     transition: background 0.3s;
 }
 
+.project-block
+{
+    min-height: 1em;
+    height: 100%;
+    padding-top: $project-title-height;
+}
+@media (min-width: $layout-portraitlarge)
+{
+    .project-block
+    {
+        height: $project-block-height;
+        padding-top: 0;
+    }
+}
+// -----------------------------------------
 .project-block .thumbnail
 {
-    position: absolute;
-    width: $img-width;
-    height: $img-height;
-    margin-left: $img-padding-left;
-    margin-top: $img-padding-top;
+    display: block;
 
-    color: $color-sidebar-main;
-    //background-color: red;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
+.project-block .thumbnail
+{
+    position: relative;
+    padding-bottom: 56.666%;
+    margin-left: 0.5%;
+    width: 99%;
+    max-width: 99%;
+}
+@media (min-width: $layout-portraitlarge)
+{
+    .project-block .thumbnail
+    {
+        position: absolute;
+        margin: $img-padding-top $img-padding-left;
+
+        width: $img-width;
+        height: $img-height;
+    }
+}
+// -----------------------------------------
+.project-block .thumbnail img
+{
+    border-radius: 1em;
+}
+
 .project-block .thumbnail img
 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    height: $img-height;
-    //margin: $img-padding;
-    margin-top: -$img-height/2;
-    margin-left: -$img-width/2;
-    border-radius: 1em;
-
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
 }
-
+@media (min-width: $layout-portraitlarge)
+{
+    .project-block .thumbnail img
+    {
+        width: $img-width;
+    }
+}
+// -----------------------------------------
 .project-block .title
 {
     position: absolute;
@@ -65,9 +102,20 @@ $first-column: $img-width + $img-padding-left;
     top: 0.2em;
     min-width: 15em;
     max-height: $project-title-height;
-    
-    margin-left: $first-column + $second-column-padding;
 }
+
+.project-block .title
+{
+    margin-left: $img-padding-left + $second-column-padding;
+}
+@media (min-width: $layout-portraitlarge)
+{
+    .project-block .title
+    {
+        margin-left: $first-column + $second-column-padding;
+    }
+}
+
 .project-block .title h2
 {
     position: absolute;
@@ -77,20 +125,26 @@ $first-column: $img-width + $img-padding-left;
     top: Opx;
     color: $accent;
 }
-
-
+// -----------------------------------------
 .project-block .description
 {
-    position: absolute;
-    display: block;
+    display: none;
+}
+@media (min-width: $layout-portraitlarge)
+{
+    .project-block .description
+    {
+        display: block;
+        height: $project-block-height;
+        text-align: left;
+        color: $color-main;
 
-    top: $project-title-height;
-    margin-left: $first-column + $second-column-padding;
-    margin-right: 1em;
+        position: absolute;
 
-    max-height: $project-block-height - $project-title-height;
+        top: $project-title-height;
+        margin-left: $first-column + $second-column-padding;
+        margin-right: 1em;
 
-    text-align: left;
-
-    color: $color-main;
+        max-height: $project-block-height - $project-title-height;
+    }
 }

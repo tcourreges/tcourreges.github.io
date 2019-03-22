@@ -18,15 +18,19 @@ $color-link-hover: $accent;
 $color-sidebarlink: $accent;
 $color-sidebarlink-hover: white;
 
+$layout-landscape: 72em;
+$layout-landscapesmall: 55em;
+$layout-portraitlarge: 35em;
+
 html
 {
   font-family: $font-style;
 }
-@media (min-width: 48em)
+@media (min-width: $layout-landscapesmall)
 {
   html { font-size: 16px; }
 }
-@media (min-width: 58em)
+@media (min-width: $layout-landscape)
 {
   html { font-size: 20px; }
 }
