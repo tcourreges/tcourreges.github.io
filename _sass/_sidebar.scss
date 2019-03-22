@@ -1,0 +1,109 @@
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar
+{
+  text-align: center;
+  padding: 0.4rem 1rem;
+  color: $color-sidebar-main;
+  background-color: $bg-sidebar;
+}
+@media (min-width: 48em)
+{
+  .sidebar
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: right;
+  }
+}
+
+/* Sidebar links */
+.sidebar a
+{
+  color: $color-sidebarlink;
+}
+/* About section */
+.sidebar-about h1
+{
+  font-family: monospace;
+  color: $accent;
+  margin-top: 0;
+  font-family: $font-style;
+  font-size: 2.9rem;
+}
+
+/* Sidebar nav */
+.sidebar-nav
+{
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item
+{
+  display: block;
+  line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus
+{
+  color: $color-sidebarlink-hover;
+}
+.sidebar-nav-item.active
+{
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+@media (min-width: 48em)
+{
+  .sidebar-sticky
+  {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+.content
+{
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  padding-top:    2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 48em)
+{
+  .content
+  {
+    max-width: 54rem;
+    margin-left: 19rem;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 64em)
+{
+  .content
+  {
+    margin-left: 20rem;
+    margin-right: 1rem;
+  }
+}

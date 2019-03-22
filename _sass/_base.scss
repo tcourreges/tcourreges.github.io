@@ -1,0 +1,40 @@
+$font-style: "PT Sans", Helvetica, Arial, sans-serif;
+
+$bg-sidebar: #292a2d;
+$bg-main: #222123;
+$project-hover: #414349;
+
+$color-sidebar: #cccccc;
+$color-sidebar-main: #c5c5c5;
+
+$accent: #669ed4;
+
+$color-main: #dddddd;
+$color-post: $accent;
+$color-h: $accent;
+
+$color-link: #8ec8ff;
+$color-link-hover: $accent;
+$color-sidebarlink: $accent;
+$color-sidebarlink-hover: white;
+
+html
+{
+  font-family: $font-style;
+}
+@media (min-width: 48em)
+{
+  html { font-size: 16px; }
+}
+@media (min-width: 58em)
+{
+  html { font-size: 20px; }
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+} 

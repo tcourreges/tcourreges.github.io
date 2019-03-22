@@ -1,0 +1,13 @@
+# Site Settings
+title: Tanguy Courreges
+description: >
+  Personal website & portfolio
+baseurl: ""
+url: "https://tcourreges.github.io"
+github_username: tcourreges
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
