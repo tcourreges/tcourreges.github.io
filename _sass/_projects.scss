@@ -65,6 +65,7 @@ $first-column: $img-width + $img-padding-left;
     {
         position: absolute;
         margin: $img-padding-top $img-padding-left;
+        padding-bottom: 0;
 
         width: $img-width;
         height: $img-height;
