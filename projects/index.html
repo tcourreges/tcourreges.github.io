@@ -1,19 +1,4 @@
 ---
-layout: default
+layout: projects
 title: Projects
 ---
-
-<h2>Projects</h2>
-
-{% for post in site.posts %}
-
-<a href="{{ post.url | prepend: site.baseurl }}" class="project-block">
-	<div class="thumbnail">
-	   <img src="{{ post.thumbnail | prepend: site.baseurl }}">
-	</div>
-	<div class="title"><h2>{{ post.title }}</h2></div>
-	<div class="description">{{ post.description }}</div>
-</a>
-
-
-{% endfor %}

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="page">
+	<h1 class="page-title">Personal projects</h1>
+	{% for post in site.posts %}
+
+	<a href="{{ post.url | prepend: site.baseurl }}" class="project-block">
+		<div class="thumbnail">
+		   <img src="{{ post.thumbnail | prepend: site.baseurl }}">
+		</div>
+		<div class="title"><h2>{{ post.title }}</h2></div>
+		<div class="description">{{ post.description }}</div>
+	</a>
+
+	{% endfor %}
+</div>
