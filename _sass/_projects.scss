@@ -2,11 +2,11 @@ $project-block-height: 13em;
 $project-title-height: 2.3em;
 $second-column-padding: 0.5em;
 
-$img-padding-top: 0.5em;
-$img-padding-left: 0.3em;
+$img-padding-top: 0.4em;
+$img-padding-left: 0.4em;
 
 $img-height: $project-block-height - 2* $img-padding-top;
-$img-width: $img-height * 16 / 9    ;
+$img-width: $img-height * 16/9;
 
 $first-column: $img-width + $img-padding-left;
 // -----------------------------------------
@@ -139,6 +139,7 @@ $first-column: $img-width + $img-padding-left;
         height: $project-block-height;
         text-align: left;
         color: $color-main;
+        text-shadow: none;
 
         position: absolute;
 
