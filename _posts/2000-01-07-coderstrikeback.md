@@ -3,7 +3,7 @@ layout: post
 title: Coders Strike Back
 thumbnail: "/thumbnails/codersstrikeback.jpg"
 description: "CodinGame challenge<br>Detailed report on how to reach Legend League"
-repo: "https://github.com/tcourreges/HOPE"
+repo: "https://github.com/tcourreges/Coders-Strike-Back"
 permalink: "coders-strike-back"
 ---
 
@@ -11,7 +11,7 @@ permalink: "coders-strike-back"
 ## Introduction
 
 [<img src="/images/codersstrikeback/codingamelogo.png" width="50%" style="float: right; padding-left: 2em;">](https://www.codingame.com/)
-If you're not already familiar with the website [CodinGame](https://www.codingame.com/), I highly recommend you check it out. Its concept is pretty simple, and could be summed up as two concepts:
+If you're not already familiar with the website [CodinGame](https://www.codingame.com/), I highly recommend you check it out. Its concept is pretty simple, and could be summed up as two ideas:
 - [Competitive Programming](https://en.wikipedia.org/wiki/Competitive_programming): you have to write programs in order to solve problems (the input is a general test case, the output is your solution)
 - [Gamification](https://en.wikipedia.org/wiki/Gamification): those problems are presented in a fun and interactive way, like a game (sometimes quite literally, as you're writing the code of a game)
 
