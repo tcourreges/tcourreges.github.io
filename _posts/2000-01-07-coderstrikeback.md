@@ -4,6 +4,7 @@ title: Coders Strike Back
 thumbnail: "/thumbnails/codersstrikeback.jpg"
 description: "CodinGame challenge<br>Detailed report on how to reach Legend League"
 repo: "https://github.com/tcourreges/HOPE"
+permalink: "coders-strike-back"
 ---
 
 
